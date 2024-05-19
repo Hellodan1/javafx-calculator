@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.PrimaryController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="521.0" minWidth="10.0" prefWidth="496.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="104.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="181.0" minHeight="10.0" prefHeight="108.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="322.0" minHeight="10.0" prefHeight="292.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" GridPane.rowIndex="1">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="fiveKey" alignment="CENTER" mnemonicParsing="false" onAction="#fiveKeyPressed" prefHeight="73.6" prefWidth="165.6" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="fourKey" alignment="CENTER" mnemonicParsing="false" onAction="#fourKeyPressed" prefHeight="73.6" prefWidth="165.6" text="4" GridPane.rowIndex="1">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="sixKey" alignment="CENTER" mnemonicParsing="false" onAction="#sixKeyPressed" prefHeight="73.6" prefWidth="165.6" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="twoKey" alignment="CENTER" mnemonicParsing="false" onAction="#twoKeyPressed" prefHeight="73.6" prefWidth="165.6" text="2" GridPane.columnIndex="1">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="eightKey" alignment="CENTER" mnemonicParsing="false" onAction="#eightKeyPressed" prefHeight="73.6" prefWidth="165.6" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="sevenKey" alignment="CENTER" mnemonicParsing="false" onAction="#sevenKeyPressed" prefHeight="73.6" prefWidth="165.6" text="7" GridPane.rowIndex="2">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="oneKey" alignment="CENTER" mnemonicParsing="false" onAction="#oneKeyPressed" prefHeight="73.6" prefWidth="165.6" text="1">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="threeKey" alignment="CENTER" mnemonicParsing="false" onAction="#threeKeyPressed" prefHeight="73.6" prefWidth="165.6" text="3" GridPane.columnIndex="2">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="nineKey" alignment="CENTER" mnemonicParsing="false" onAction="#nineKeyPressed" prefHeight="73.6" prefWidth="165.6" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Button>
+            <Button fx:id="zeroKey" alignment="CENTER" mnemonicParsing="false" onAction="#zeroKeyPressed" prefHeight="73.6" prefWidth="165.6" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="decimalKey" alignment="CENTER" mnemonicParsing="false" onAction="#decimalKeyPressed" prefHeight="73.6" prefWidth="165.6" text="⬤" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <VBox prefHeight="292.0" prefWidth="104.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="clearKey" alignment="CENTER" mnemonicParsing="false" onAction="#clearKeyPressed" prefHeight="44.0" prefWidth="104.0" text="Clear">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="sumKey" alignment="CENTER" mnemonicParsing="false" onAction="#sumKeyPressed" prefHeight="44.0" prefWidth="104.0" text="+">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="subtractKey" alignment="CENTER" mnemonicParsing="false" onAction="#subtractKeyPressed" prefHeight="44.0" prefWidth="104.0" text="−">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="multiplyKey" alignment="CENTER" mnemonicParsing="false" onAction="#multiplyKeyPressed" prefHeight="44.0" prefWidth="104.0" text="×">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="divideKey" alignment="CENTER" mnemonicParsing="false" onAction="#divideKeyPressed" prefHeight="44.0" prefWidth="104.0" text="÷">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="equalKey" alignment="CENTER" mnemonicParsing="false" onAction="#equalKeyPressed" prefHeight="72.0" prefWidth="104.0" text="=">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Ver 0.1" textAlignment="CENTER" wrappingWidth="105.7265625" />
+         </children>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <TextField fx:id="equationBox" prefHeight="45.6" prefWidth="496.0" />
+            <TextField fx:id="answerBox" prefHeight="67.2" prefWidth="496.0">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </TextField>
+         </children>
+      </VBox>
+   </children>
+</GridPane>
